@@ -9,6 +9,12 @@ contract Test {
         myArray.push(3);
     }
 
+    function getMyArray() public view returns (uint[]) {
+        return myArray;
+    }
+
+    }
+
     function getArrayLength() public view returns (uint) {
         return myArray.length;
     }
