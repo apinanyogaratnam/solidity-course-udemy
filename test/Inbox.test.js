@@ -19,6 +19,7 @@ beforeEach(async () => {
 
 describe('Inbox', () => {
     it('deploys a contract', () => {
-        console.log(inbox);
+        // checks if the address is a defined value
+        assert.ok(inbox.options.address);
     });
 });
