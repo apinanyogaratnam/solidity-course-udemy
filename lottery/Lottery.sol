@@ -16,4 +16,10 @@ contract Lottery {
         // since they are involking the function
         players.push(msg.sender);
     }
+
+    function random() private view returns (uint) {
+        // sha3() is the same as keccak256()
+        // sha3() has been deprecated in favor of keccak256()
+        return uint(keccak256(block.difficulty, now, players));
+    }
 }
