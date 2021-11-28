@@ -1,4 +1,5 @@
-pragma solidity ^0.4.17;
+// SPDX identifier:
+pragma solidity ^0.8.9;
 // linter warnings (red underline) about pragma version can igonored!
 
 // contract code will go here
@@ -6,7 +7,7 @@ pragma solidity ^0.4.17;
 contract Inbox {
     string public message;
 
-    function Inbox(string initialMessage) public {
+    constructor Inbox(string initialMessage) {
         message = initialMessage;
     }
 
